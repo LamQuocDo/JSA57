@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: repeat(2,1fr);
+            gap: 17px;
+        }
+
+        .item{
+            text-align: center;
+            justify-content: center;
+            height: 340px;
+            border: solid 2px black;
+            border-radius: 10px;
+            transition: all 0.5s;
+        }
+
+        .item:hover{
+            scale: 1.035;
+        }
+
+        button{
+            background-color: white;
+            font-size: large;
+            transition: all 0.5s;
+            border-radius: 10px;
+        }
+        button:hover{
+            background-color: rgb(189, 189, 189);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item" id="item1">
+            <img src="https://mafada.vn/wp-content/uploads/2023/01/do-do.jpg" alt="" width="260" height="200">
+            <h4>Áo thun đỏ cổ trụ</h4>
+            <p style="font-size: small;">Giá: 149.000 VND</p>
+            <button>Thêm vào giỏ</button>
+        </div>
+
+        <div class="item" id="item2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYURw_NEes1VSg_Yb23lT7nvd5yoPCLzFjvA&s" alt="" width="260" height="200">
+            <h4>Áo thun xám</h4>
+            <p style="font-size: small;">Giá: 149.000 VND</p>
+            <button>Thêm vào giỏ</button>
+        </div>
+
+        <div class="item" id="item3">
+            <img src="https://product.hstatic.net/200000588671/product/ao-thun-nam-bycotton-in-hoa-kem_eff8dd8337de4eabb2a64c47e16c5f13_1024x1024.jpg" alt="" width="260" height="200">
+            <h4>Áo thun trắng in hình theo yêu cầu</h4>
+            <p style="font-size: small;">Giá: 250.000 VND</p>
+            <button>Thêm vào giỏ</button>
+        </div>
+
+        <div class="item" id="item4">
+            <img src="https://product.hstatic.net/200000588671/product/dsc08994_10b5c7bf0aae4146b5816e5e5befabd9_master.jpg" alt="" width="260" height="200">
+            <h4>Áo thun trắng cổ tròn tay đen</h4>
+            <p style="font-size: small;">Giá: 269.000 VND</p>
+            <button>Thêm vào giỏ</button>
+        </div>
+
+        <div class="item" id="item5">
+            <img src="https://product.hstatic.net/200000588671/product/dsc09029_4d2b16491adf4a6294e6e52751cb967a_1024x1024.jpg" alt="" width="260" height="200">
+            <h4>Áo thun màu be</h4>
+            <p style="font-size: small;">Giá: 149.000 VND</p>
+            <button>Thêm vào giỏ</button>
+        </div>
+
+        <div class="item" id="item6">
+            <img src="https://galle.vn/images/products/2024/resized/dk.1.12553.5.jpg" alt="" width="auto" height="200">
+            <h4>Đồng hồ đeo tay dây da nâu</h4>
+            <p style="font-size: small;">Giá: 1.069.000 VND</p>
+            <button>Thêm vào giỏ</button>
+        </div>
+
+        <div class="item" id="item7">
+            <img src="https://donghoolevs.vn/wp-content/uploads/2022/10/hinh-anh-chinh-5-5.jpg" alt="" width="auto" height="200">
+            <h4>Đồng hồ đeo tay cơ bạc viền vàng</h4>
+            <p style="font-size: small;">Giá: 1.890.000 VND</p>
+            <button>Thêm vào giỏ</button>
+        </div>
+
+        <div class="item" id="item8">
+            <img src="https://cdn.tgdd.vn/Products/Images/7264/304236/rossini-5396w01e-5395w01e-thumb-600x600.jpg" alt="" width="auto" height="200">
+            <h4>Đồng hồ đeo tay nam màu bạc</h4>
+            <p style="font-size: small;">Giá: 1.799.000 VND</p>
+            <button>Thêm vào giỏ</button>
+        </div>
+
+        <div class="item" id="item9">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtZ5ezXjtVlgOoyLmdj7krlZKcJZokJR2Rdg&s" alt="" width="auto" height="200">
+            <h4>Đòng hồ đeo tay nam màu gold</h4>
+            <p style="font-size: small;">Giá: 1.799.000 VND</p>
+            <button>Thêm vào giỏ</button>
+        </div>
+
+        <div class="item" id="item10">
+            <img src="https://png.pngtree.com/png-clipart/20240927/original/pngtree-electronic-color-touch-screen-wrist-watch-png-image_16104797.png" alt="" width="auto" height="200">
+            <h4>Đồng hồ điện tử cảm ứng</h4>
+            <p style="font-size: small;">Giá: 1.320.000 VND</p>
+            <button>Thêm vào giỏ</button>
+        </div>
+
+    </div>
+</body>
+</html>
