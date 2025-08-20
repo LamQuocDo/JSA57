@@ -21,7 +21,7 @@ console.log(v1 || v2 || "ABC"); //"ABC" ep bool -> true -> tra ve ABC
 console.log(v3 || v8 || v4); //khong co false -> tra ve xa nhat
 
 // ap dung or
-const fullName = prompt("Nhap ten: ").trim();
+// const fullName = prompt("Nhap ten: ").trim();
 console.log(fullName || "Khong co ten");
 
 //not : !
