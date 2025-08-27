@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai thuc hanh 1</title>
+</head>
+<body>
+    <h2>Danh sách user</h2>
+    <ul id="userList"></ul>
+
+    <!-- js -->
+     <script>
+        let users = [
+            {id: 1, name: "Abc"},
+            {id: 2, name: "Def"},
+            {id: 3, name: "Ghi"}
+        ];
+
+        function printUser(){
+            const list = document.querySelector("#userList")
+            list.innerHTML = "";
+            users.forEach(user => {
+                const  li = document.createElement("li")
+                li.textContent = `ID: ${user.id}, name: ${user.name}`
+                list.appendChild(li)
+            });
+        }
+
+        printUser();
+
+        // add obj mới
+        users.push({id: 4, name: "ABC"});
+        printUser()
+
+        //update tên dụa trên id
+
+        function updateName(id,newName){
+            const user = users.find(user => user.id === id);
+            user.name = newName
+        }
+
+        updateName(2,"Def")
+        printUser()
+
+        //xóa user dựa trên id
+
+        function delUser(id){
+            users = users.filter(user => user.id !== id);
+
+        }
+        delUser(3)
+        printUser()
+
+        // obj đại diện
+        let person = {name: "A", age: 18, city: "NY"};
+        person.email = "exam@gmail.com" // thêm email
+        delete person.age // xóa tuổi
+        console.log(`Person: ${JSON.stringify(person)}`)
+
+     </script>
+</body>
+</html>
