@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login & Signup</title>
+  <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Login Form -->
+    <div class="login-form active" id="login-form">
+      <h2>Đăng nhập</h2>
+      <input type="email" placeholder="Email" id="emilLog">
+      <input type="text" placeholder="User name" id="usernameLog">
+      <input type="password" placeholder="Password" id="passwordLog">
+      <button id="login-btn">Đăng nhập</button>
+      <h4>Bạn chưa có tài khoản? <a href="#" id="to-signup">Tạo tài khoản</a></h4>
+    </div>
+
+    <!-- Signup Form -->
+    <div class="login-form" id="signup-form">
+      <h2>Đăng kí</h2>
+      <input type="email" placeholder="Email" id="emilSign">
+      <input type="text" placeholder="User name" id="usernameSign">
+      <input type="password" placeholder="Password" id="passwordSign">
+      <input type="password" placeholder="Confirm Password" id="cpassSign">
+      <button id="signup-btn">Tạo tài khoản</button>
+      <h4>Bạn đã có tài khoản? <a href="#" id="to-login">Đăng nhập</a></h4>
+    </div>
+  </div>
+
+  <script src="../js/login.js"></script>
+</body>
+</html>
